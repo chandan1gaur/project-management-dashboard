@@ -1,0 +1,71 @@
+/* src/App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  padding: 20px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.project {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 300px;
+  margin-bottom: 20px;
+}
+
+.task-columns {
+  display: flex;
+  gap: 10px;
+}
+
+.task-column {
+  flex: 1;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.task {
+  background: rgb(241, 238, 238);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .project-list {
+    flex-direction: column;
+  }
+
+  .task-columns {
+    flex-direction: column;
+  }
+}
